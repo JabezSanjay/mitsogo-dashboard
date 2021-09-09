@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./Components/Navbar";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
+    <div className="min-h-screen bg-bodyColor">
+      <Navbar />
     </div>
   );
 };
