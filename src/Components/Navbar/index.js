@@ -10,10 +10,10 @@ import Sidebar from "../Sidebar";
 import "../../index.css";
 
 const Navbar = ({ children }) => {
-  const [openSidebar, setOpenSidebar] = useState(true);
+  const [openSidebar, setOpenSidebar] = useState(false);
 
   return (
-    <div className="flex">
+    <div className={`flex ${openSidebar ? "w-170 sm:w-full" : ""}`}>
       <Sidebar open={openSidebar === true ? "block" : "hidden"} />
       <div
         className={`p-4 bg-white shadow-sm w-full max-h-16 ${

@@ -17,7 +17,7 @@ const Sidebar = ({ open }) => {
 
   return (
     <div
-      className={`${open} min-h-screen w-full sm:w-1/6 transition duration-150 ease-in-out bg-mainColor active:bg-white`}
+      className={`${open} min-h-screen w-full sm:w-1/6  bg-mainColor active:bg-white`}
     >
       <div className="p-5 flex items-center h-16 bg-darkMainColor lg:w-96">
         <img src={LogoImage} alt="logo" className="w-20" />
