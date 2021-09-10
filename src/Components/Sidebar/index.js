@@ -24,7 +24,10 @@ const Sidebar = ({ open }) => {
       </div>
       <div>
         {tabs.map((tab) => (
-          <div className="p-5 flex items-center  hover:bg-darkMainColor border-l-2 border-mainColor hover:border-activePurple cursor-default">
+          <div
+            key={tab.name}
+            className="p-5 flex items-center  hover:bg-darkMainColor border-l-2 border-mainColor hover:border-activePurple cursor-default"
+          >
             <img src={tab.svg} alt="logo" />
             <a href="/" className="ml-4 text-white">
               {tab.name}

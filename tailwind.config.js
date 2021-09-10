@@ -8,6 +8,8 @@ module.exports = {
       mainColor: "#43425D",
       darkMainColor: "#3C3B54",
       lightGray: "#4D4F5C",
+      buttonPurple: "#6763E3",
+      buttonSecondaryPurple: "#514DDC",
       activePurple: "#A3A0FB",
       warningRed: "#FF4A33",
     },
