@@ -9,8 +9,10 @@
   padding: 0;
 }
 
-body {
+body,
+html {
   font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
 }
 
 .dropdown:focus-within .dropdown-menu {
