@@ -9,13 +9,17 @@ import avatarImage from "../../images/Navbar/avatarImage.png";
 import Sidebar from "../Sidebar";
 import "../../index.css";
 
-const Navbar = () => {
-  const [openSidebar, setOpenSidebar] = useState(false);
+const Navbar = ({ children }) => {
+  const [openSidebar, setOpenSidebar] = useState(true);
 
   return (
     <div className="flex">
-      {openSidebar && <Sidebar />}
-      <div className="p-4 bg-white shadow-sm w-full max-h-16 rounded-tl-lg">
+      <Sidebar open={openSidebar === true ? "block" : "hidden"} />
+      <div
+        className={`p-4 bg-white shadow-sm w-full max-h-16 ${
+          openSidebar && "lg:rounded-tl-3xl"
+        }`}
+      >
         <div className="flex items-center">
           <img
             src={HamburgerMenu}
@@ -103,6 +107,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        {children}
       </div>
     </div>
   );
