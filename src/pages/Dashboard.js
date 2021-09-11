@@ -1,7 +1,8 @@
 import React from "react";
 import Button from "../Components/Button";
 import PlusIcon from "../images/Button/plus.svg";
-import Card from "../Components/Card/PersonalCard";
+import PersonalCard from "../Components/Card/PersonalCard";
+import StatisticsCard from "../Components/Card/StatisticsCard";
 
 const Dashboard = () => {
   return (
@@ -11,9 +12,9 @@ const Dashboard = () => {
         <Button name="Add Funds" svg={PlusIcon} />
       </div>
       <div className="flex flex-wrap justify-evenly">
-        <Card />
-        <Card />
-        <Card />
+        <StatisticsCard type="graph" />
+        <StatisticsCard />
+        <PersonalCard />
       </div>
     </div>
   );

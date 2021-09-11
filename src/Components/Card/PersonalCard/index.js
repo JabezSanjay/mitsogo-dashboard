@@ -9,7 +9,7 @@ import ProfileImage1 from "../../../images/Card/profilePic1.png";
 import ProfileImage2 from "../../../images/Card/profilePic2.png";
 import ProfileImage3 from "../../../images/Card/profilePic3.png";
 
-const Card = () => {
+const PersonalCard = () => {
   const profiles = [
     { name: "Drew James", svg: ProfileImage1 },
     { name: "Bavid Kames", svg: ProfileImage2 },
@@ -17,7 +17,7 @@ const Card = () => {
   ];
 
   return (
-    <div className="p-2 lg:p-3 w-full lg:w-1/3">
+    <div className="p-2 lg:p-3 w-full lg:w-1/3 order-first sm:order-3">
       <div className="bg-white px-8 pt-12 pb-14 rounded-lg">
         <div>
           <div className="flex flex-col  items-center border-b-2 border-bodyColor">
@@ -45,7 +45,11 @@ const Card = () => {
         </div>
         {profiles.map((profile) => (
           <div className="mt-5 flex" key={profile.name}>
-            <img src={profile.svg} alt="" className="w-1/6 sm:w-1/12" />
+            <img
+              src={profile.svg}
+              alt=""
+              className="w-1/6 sm:w-1/12 h-1/6 sm:h-1/12"
+            />
             <div className="ml-3 w-full">
               <h3 className="text-mainColor font-semibold">{profile.name}</h3>
               <div className="text-mainColor opacity-50 text-sm flex flex-wrap justify-between">
@@ -64,4 +68,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default PersonalCard;

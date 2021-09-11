@@ -13,6 +13,7 @@ body,
 html {
   font-family: "Source Sans Pro", sans-serif;
   overflow-x: hidden;
+  background-color: #f0f0f7;
 }
 
 .dropdown:focus-within .dropdown-menu {

@@ -4,7 +4,7 @@ import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-bodyColor">
+    <div className="min-h-screen">
       <div>
         <Navbar>
           <Dashboard />
