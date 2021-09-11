@@ -17,7 +17,7 @@ const PersonalCard = () => {
   ];
 
   return (
-    <div className="p-2 lg:p-3 w-full lg:w-1/3 order-first sm:order-3">
+    <div className="p-2 lg:p-3 w-full lg:w-1/3">
       <div className="bg-white px-8 pt-12 pb-14 rounded-lg">
         <div>
           <div className="flex flex-col  items-center border-b-2 border-bodyColor">
