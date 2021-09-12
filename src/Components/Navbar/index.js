@@ -10,17 +10,17 @@ import Sidebar from "../Sidebar";
 import "../../index.css";
 
 const Navbar = ({ children }) => {
-  const [openSidebar, setOpenSidebar] = useState(false);
+  const [openSidebar, setOpenSidebar] = useState(true);
 
   return (
-    <div className={`flex ${openSidebar ? "w-170 sm:w-full" : ""}`}>
+    <div className={`flex ${openSidebar ? "w-185 sm:w-full" : ""}`}>
       <Sidebar open={openSidebar === true ? "block" : "hidden"} />
       <div
         className={`p-4 bg-white shadow-sm w-full max-h-16 ${
           openSidebar && "lg:rounded-tl-3xl"
         }`}
       >
-        <div className="flex items-center">
+        <div className="flex items-center sticky top-0">
           <img
             src={HamburgerMenu}
             alt=""

@@ -4,6 +4,7 @@ import PlusIcon from "../images/Button/plus.svg";
 import PersonalCard from "../Components/Card/PersonalCard";
 import StatisticsCard from "../Components/Card/StatisticsCard";
 import TableCard from "../Components/Card/TableCard";
+import VideoCard from "../Components/Card/VideoCard";
 
 const Dashboard = () => {
   return (
@@ -17,6 +18,7 @@ const Dashboard = () => {
         <StatisticsCard />
         <PersonalCard />
         <TableCard />
+        <VideoCard />
       </div>
     </div>
   );

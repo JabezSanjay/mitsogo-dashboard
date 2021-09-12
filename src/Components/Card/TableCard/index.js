@@ -43,11 +43,9 @@ const TableCard = () => {
 
   return (
     <div className="p-2 lg:p-3 w-full lg:w-2/3">
-      <div className="bg-white px-10 py-3 rounded-lg">
+      <div className="bg-white px-4 py-3 rounded-lg">
         <div className="mt-3 flex justify-between">
-          <h3 className="text-lg text-lightGray font-semibold pb-3">
-            Referrer
-          </h3>
+          <h3 className="text-lg text-lightGray pb-3">Referrer</h3>
         </div>
         <div className=" w-full mx-auto overflow-auto">
           <table className="table-auto w-full text-left whitespace-no-wrap mb-3">
