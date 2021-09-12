@@ -17,7 +17,7 @@ const PersonalCard = () => {
   ];
 
   return (
-    <div className="p-2 lg:p-3 w-full lg:w-1/3">
+    <div className="p-2 lg:p-3 w-full maxSm:order-first md:w-1/3">
       <div className="bg-white px-8 pt-12 pb-14 rounded-lg">
         <div>
           <div className="flex flex-col  items-center border-b-2 border-bodyColor">
@@ -48,7 +48,7 @@ const PersonalCard = () => {
             <img
               src={profile.svg}
               alt=""
-              className="w-1/6 sm:w-1/12 h-1/6 sm:h-1/12"
+              className="w-1/6 rangelg:w-2/12 xl:w-1/12 h-1/6 sm:h-1/12"
             />
             <div className="ml-3 w-full">
               <h3 className="text-mainColor font-semibold">{profile.name}</h3>

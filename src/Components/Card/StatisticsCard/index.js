@@ -102,7 +102,7 @@ const StatisticsCard = ({ type }) => {
 
   const COLORS = ["#80E2FF", "#F49FA8", "#B5B3FB", "#FFDF94"];
   return (
-    <div className="p-2 lg:p-3 w-full lg:w-1/3 ">
+    <div className="p-2 lg:p-3 w-full md:col-span-1 md:w-1/3 md:h-1/2">
       <div className="bg-white px-4 pt-1 pb-10 rounded-lg">
         <div className="mt-3 flex justify-between">
           <h3 className="text-lg text-mainColor mb-6">

@@ -4,7 +4,11 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        185: "185%",
+        165: "180%",
+      },
+      screens: {
+        maxSm: { max: "639px" },
+        rangelg: { min: "1024px", max: "1300px" },
       },
     },
     colors: {

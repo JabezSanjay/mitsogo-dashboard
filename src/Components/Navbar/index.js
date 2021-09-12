@@ -13,7 +13,7 @@ const Navbar = ({ children }) => {
   const [openSidebar, setOpenSidebar] = useState(true);
 
   return (
-    <div className={`flex ${openSidebar ? "w-185 sm:w-full" : ""}`}>
+    <div className={`flex ${openSidebar ? "w-165 sm:w-full" : ""}`}>
       <Sidebar open={openSidebar === true ? "block" : "hidden"} />
       <div
         className={`p-4 bg-white shadow-sm w-full max-h-16 ${
