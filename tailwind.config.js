@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        165: "180%",
+        120: "120%",
+        165: "155%",
       },
       screens: {
         maxSm: { max: "639px" },

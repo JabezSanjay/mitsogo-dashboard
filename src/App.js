@@ -4,12 +4,13 @@ import Dashboard from "./pages/Dashboard";
 
 const App = () => {
   return (
-    <div className="min-h-screen">
+    <div>
       <div>
         <Navbar>
           <Dashboard />
         </Navbar>
       </div>
+      <div></div>
     </div>
   );
 };

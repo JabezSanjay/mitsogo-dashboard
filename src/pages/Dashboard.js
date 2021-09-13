@@ -8,8 +8,8 @@ import VideoCard from "../Components/Card/VideoCard";
 
 const Dashboard = () => {
   return (
-    <div className="min-h-screen">
-      <div className="flex flex-wrap justify-between mt-3 mb-3">
+    <div className="min-h-screen mx-5">
+      <div className="flex flex-wrap justify-between my-3 mx-3">
         <h2 className="text-2xl font-semibold py-5 text-mainColor">Overview</h2>
         <Button name="Add Funds" svg={PlusIcon} />
       </div>

@@ -13,18 +13,22 @@ const Navbar = ({ children }) => {
   const [openSidebar, setOpenSidebar] = useState(true);
 
   return (
-    <div className={`flex ${openSidebar ? "w-165 sm:w-full" : ""}`}>
+    <div
+      className={`flex ${
+        openSidebar ? "w-165 sm:w-full" : ""
+      } min-h-screen z-20`}
+    >
       <Sidebar open={openSidebar === true ? "block" : "hidden"} />
       <div
-        className={`p-4 bg-white shadow-sm w-full max-h-16 ${
+        className={`p-4   bg-white shadow-sm w-full max-h-16 ${
           openSidebar && "lg:rounded-tl-3xl"
         }`}
       >
-        <div className="flex items-center sticky top-0">
+        <div className="flex items-center">
           <img
             src={HamburgerMenu}
             alt=""
-            className="cursor-pointer pr-4"
+            className="cursor-pointer pr-4 "
             onClick={() => {
               setOpenSidebar(!openSidebar);
             }}
