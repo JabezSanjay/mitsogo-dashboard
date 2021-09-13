@@ -30,6 +30,7 @@ Create a webpage with the given design file of dashboard.
 - Tailwind
 - Grid
 - Flexbox
+- Recharts
 
 ## Future Additions
 
