@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       width: {
         120: "120%",
-        165: "150%",
+        165: "165%",
       },
       screens: {
         maxSm: { max: "639px" },

@@ -11,15 +11,15 @@ import "../../index.css";
 import Dashboard from "../../pages/Dashboard";
 
 const Navbar = () => {
-  const [openSidebar, setOpenSidebar] = useState(true);
+  const [openSidebar, setOpenSidebar] = useState(false);
 
   return (
     <div>
-      <Dashboard open={openSidebar === true ? "pl-80 w-165 sm:w-full" : ""} />
+      <Dashboard open={openSidebar === true ? "pl-80 w-165 lg:w-full" : ""} />
       <div
         className={`flex ${
           openSidebar ? "w-165 sm:w-full" : ""
-        } min-h-screen fixed top-0 left-0 right-0 z-20 ml-`}
+        }  fixed top-0 left-0 right-0 z-20`}
       >
         <Sidebar open={openSidebar === true ? "block" : "hidden"} />
         <div
@@ -115,7 +115,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 };

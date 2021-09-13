@@ -16,17 +16,19 @@ const Sidebar = ({ open }) => {
   ];
 
   return (
-    <aside
-      className={`${open} min-h-full w-full sm:w-1/6 bg-mainColor active:bg-white`}
-    >
+    <aside className={`${open}  w-full sm:w-1/6 bg-mainColor active:bg-white `}>
       <div className="p-5 flex items-center h-16 bg-darkMainColor lg:w-96">
         <img src={LogoImage} alt="logo" className="w-20" />
       </div>
-      <div>
+      <div className="min-h-screen ">
         {tabs.map((tab) => (
           <div
             key={tab.name}
-            className="p-5 flex items-center  hover:bg-darkMainColor border-l-2 border-mainColor hover:border-activePurple cursor-default"
+            className={`p-5 flex items-center ${
+              tab.name === "Dashboard"
+                ? "bg-darkMainColor border-activePurple"
+                : ""
+            }  hover:bg-darkMainColor border-l-2 border-mainColor hover:border-activePurple cursor-default`}
           >
             <img src={tab.svg} alt="logo" />
             <a href="/" className="ml-4 text-white">

@@ -14,7 +14,12 @@ const VideoCard = () => {
             id="video-cover"
             src="https://i.ytimg.com/vi/Oy6hk6Y7VHQ/maxresdefault.jpg"
             alt="Video title"
-            className="w-full"
+            className="w-full cursor-pointer"
+            onClick={() => {
+              window.location.assign(
+                "https://www.youtube.com/watch?v=Oy6hk6Y7VHQ"
+              );
+            }}
           />
 
           {/* <iframe
@@ -28,16 +33,8 @@ const VideoCard = () => {
             title="Video title"
           ></iframe> */}
 
-          <button
-            id="play"
-            className="play-btn"
-            onClick={() => {
-              window.location.assign(
-                "https://www.youtube.com/watch?v=Oy6hk6Y7VHQ"
-              );
-            }}
-          >
-            <div className="p-3 bg-white rounded-full shadow-2xl">
+          <button id="play" className="play-btn z-50">
+            <div className="p-3 bg-white rounded-full shadow-2xl z-50">
               <img src={PlayIcon} width="20" alt="Play" />
             </div>
           </button>
