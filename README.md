@@ -4,28 +4,6 @@ Assignment: Create a responsive webpage of the given dashboard.
 
 # [🔗 View Deployed Version](http://mitsogo-dashboard.jabezsanjay.com/)
 
-## Installation and Setup Instructions
-
-#### Example:
-
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.
-
-Installation:
-
-`npm install`
-
-To Run Test Suite:
-
-`npm test`
-
-To Start Server:
-
-`npm start`
-
-To Visit App:
-
-`localhost:3000`
-
 ## Table Of Contents
 
 - [The Challenge](#The-Challenge)
@@ -56,3 +34,25 @@ Create a webpage with the given design file of dashboard.
 ## Future Additions
 
 - Bug: The sidebar takes 100% width of the background in the desktop view [Even though it doesn't affect the layput or functions, this affects the credibilty of design].
+
+## Installation and Setup Instructions
+
+#### Example:
+
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+
+Installation:
+
+`npm install`
+
+To Run Test Suite:
+
+`npm test`
+
+To Start Server:
+
+`npm start`
+
+To Visit App:
+
+`localhost:3000`
