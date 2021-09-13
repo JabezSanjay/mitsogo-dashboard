@@ -6,12 +6,32 @@ import ProfileIcon from "../../images/Navbar/profileIcon.svg";
 import BillingIcon from "../../images/Navbar/billingIcon.svg";
 import LogoutIcon from "../../images/Navbar/logoutIcon.svg";
 import avatarImage from "../../images/Navbar/avatarImage.png";
+import ProfileImage1 from "../../images/Card/profilePic1.png";
+import ProfileImage2 from "../../images/Card/profilePic2.png";
+import ProfileImage3 from "../../images/Card/profilePic3.png";
 import Sidebar from "../Sidebar";
 import "../../index.css";
 import Dashboard from "../../pages/Dashboard";
 
 const Navbar = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
+  const profiles = [
+    {
+      name: "Bavid Kames",
+      svg: ProfileImage1,
+      message: "Assigned you on the call with Sara",
+    },
+    {
+      name: "Alexa Marry",
+      svg: ProfileImage2,
+      message: "Marked the task New UI as done",
+    },
+    {
+      name: "Eva Maria",
+      svg: ProfileImage3,
+      message: "Added a new comment on Sales task",
+    },
+  ];
 
   return (
     <div>
@@ -52,11 +72,58 @@ const Navbar = () => {
             </div>
 
             <div className="flex">
-              <img
-                src={NotificationIcon}
-                alt=""
-                className="cursor-pointer pr-3 w-9"
-              />
+              <div className="flex items-center justify-center">
+                <div className=" relative inline-block text-left dropdown">
+                  <span className="rounded-md shadow-sm">
+                    <button
+                      className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium transition duration-150 ease-in-out bg-white rounded-md hover:text-gray-500 focus:outline-none"
+                      type="button"
+                    >
+                      <img
+                        src={NotificationIcon}
+                        alt=""
+                        className="w-64 sm:w-7"
+                      />
+                    </button>
+                  </span>
+                  <div className="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95 ">
+                    <div
+                      className="absolute -right-10 -translate-x-1/2 translate-y-0 w-72 mt-2 py-3 px-3 origin-top-right bg-white rounded-md shadow-lg outline-none"
+                      aria-labelledby="headlessui-menu-button-1"
+                      id="headlessui-menu-items-117"
+                      role="menu"
+                    >
+                      {profiles.map((profile) => (
+                        <div className="mt-5 flex" key={profile.name}>
+                          <img
+                            src={profile.svg}
+                            alt=""
+                            className="w-1/6  h-1/6 sm:h-1/12"
+                          />
+                          <div className="ml-3 w-full">
+                            <h3 className="text-mainColor font-semibold">
+                              {profile.name}
+                            </h3>
+                            <div className="text-mainColor opacity-50 text-sm flex flex-wrap justify-between">
+                              <div>
+                                <p>{profile.message}</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                      <div className="flex content-center justify-center mt-4  border-t-2 border-veryLightGray">
+                        <a
+                          href="/"
+                          className="text-anchorColor mt-2 md:text-sm"
+                        >
+                          Show More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="flex items-center justify-center">
                 <div className=" relative inline-block text-left dropdown">
                   <span className="rounded-md shadow-sm">

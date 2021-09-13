@@ -25,6 +25,7 @@ module.exports = {
       warningRed: "#FF4A33",
       tableHeadColor: "#F5F6FA",
       tableHeadTextColor: "#A3A6B4",
+      anchorColor: "#3B86FF",
     },
   },
   variants: {
