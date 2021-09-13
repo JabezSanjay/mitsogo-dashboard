@@ -6,9 +6,9 @@ import StatisticsCard from "../Components/Card/StatisticsCard";
 import TableCard from "../Components/Card/TableCard";
 import VideoCard from "../Components/Card/VideoCard";
 
-const Dashboard = () => {
+const Dashboard = ({ open }) => {
   return (
-    <div className="min-h-screen mx-5">
+    <div className={`${open} mt-16 p-4`}>
       <div className="flex flex-wrap justify-between my-3 mx-3">
         <h2 className="text-2xl font-semibold py-5 text-mainColor">Overview</h2>
         <Button name="Add Funds" svg={PlusIcon} />
