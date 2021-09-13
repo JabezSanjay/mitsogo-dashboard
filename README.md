@@ -2,7 +2,7 @@
 
 Assignment: Create a responsive webpage of the given dashboard.
 
-# [🔗 View Deployed Version](http://mitsogo-dashboard.jabezsanjay.com/)
+# [🔗 View Deployed Version](https://mitsogo-dashboard.jabezsanjay.tech/)
 
 ## Table Of Contents
 
